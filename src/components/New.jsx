@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const New = ({ report }) => {
     const { urlToImage, url, title, description, source } = report;
@@ -32,5 +33,7 @@ const New = ({ report }) => {
     )
 }
     
-
+New.propTypes = {
+    report: PropTypes.object.isRequired
+}
 export default New;
